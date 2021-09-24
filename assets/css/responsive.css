@@ -1,0 +1,21 @@
+@media (min-width: 740px) and (max-width: 1023px) {
+    #section{
+        width: 95%;
+    }
+
+    #section .beverage-col{
+        min-width: 90%;
+    }
+
+    #section .content-sections{
+        flex-direction: column;
+    }
+
+    #section .procedure .write-content-proceduct{
+        width: 100%;
+    }
+
+    #section .procedure .header-procedure{
+        font-size: 30px;
+    }
+}
