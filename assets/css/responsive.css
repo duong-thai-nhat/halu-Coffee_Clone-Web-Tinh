@@ -1,21 +1,98 @@
-@media (min-width: 740px) and (max-width: 1023px) {
-    #section{
-        width: 95%;
+/* Tablet, Mobile */
+@media (max-width: 1123px){
+    #main #header{
+        height: 78px !important;
     }
 
-    #section .beverage-col{
-        min-width: 90%;
+    #header-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
     }
 
-    #section .content-sections{
-        flex-direction: column;
+    #box-left-header{
+        /* justify-content: center;
+        display: flex;
+        flex: 1; */
     }
 
-    #section .procedure .write-content-proceduct{
-        width: 100%;
+    #header-container #nav{
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        color: #000;
+        transition: all 1s;
+    }
+    
+    #header-container #nav.active{
+        display: block;
+        top: 100%;
+        left: 30px;
+        right: 30px;
     }
 
-    #section .procedure .header-procedure{
-        font-size: 30px;
+    #header-container #nav li{
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    #header-container #nav li a{
+        color: #000;
+    }
+
+    #nav .subnav{
+        display: block;
+        position: unset;
+        box-shadow: unset;
+        padding: 0 8px;
+    }
+
+    #nav .category > li{
+        width: unset;
+        float: unset;
+    }
+
+    #nav .category > li > a{
+        font-weight: unset;
+        text-transform: unset;
+        font-size: 16px;
+        display: block;
+        padding: 7px 0;
+    }
+
+    #nav .sub-category li{
+        padding: 7px 0;
+    }
+
+    #nav .sub-category li a{
+        padding: 0 0 0 10px;
+    }
+
+    #nav .subnav .menu-slider{
+        display: none;
+    }
+
+    #header-container .box-left-header_menu{
+        display: block;
+        padding: 29px;
+    }
+
+    #box-left-header img{
+        width: 56px;
+        margin-left: 140px;
+        margin-right: 0;
+    }
+
+    .slide__category{
+        display: none;
+    }
+
+    #advertise{
+        width: 750px;
+        display: none;
+    }
+
+    #slider{
+        /* display: none; */
     }
 }

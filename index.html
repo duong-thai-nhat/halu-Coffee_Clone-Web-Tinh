@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HaluCafe</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
@@ -13,6 +13,7 @@
     <div id="main">
         <div id="header">
             <div id="header-container">
+                <i class="box-left-header_menu fa fa-bars" aria-hidden="true"></i>
                 <div id="box-left-header" class="header_content">
                     <img src="./assets/img/logo.png" class="box-left" alt="logo">
                     <ul id="nav" class="box-left">
@@ -26,7 +27,7 @@
                             <div class="subnav">
                                 <ul class="category">
                                     <li>
-                                        <a href="">COFFEE</a>
+                                        <a href="">Coffee</a>
                                         <ul class="sub-category">
                                             <li><a href="">Espresso</a></li>
                                             <li><a href="">Cappuccino</a></li>
@@ -35,7 +36,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="">NƯỚC ÉP</a>
+                                        <a href="">Nước ép</a>
                                         <ul class="sub-category">
                                             <li><a href="">Dưa hấu</a></li>
                                             <li><a href="">Cam</a></li>
@@ -44,7 +45,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="">TRÀ SỮA</a>
+                                        <a href="">Trà sữa</a>
                                         <ul class="sub-category">
                                             <li><a href="">Kiwi</a></li>
                                             <li><a href="">Bạc Hà</a></li>
@@ -53,7 +54,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="">COCKTAIL</a>
+                                        <a href="">Cocktail</a>
                                         <ul class="sub-category">
                                             <li><a href="">Cocktail Bloody Mary</a></li>
                                             <li><a href="">Cocktail Mojito</a></li>
@@ -64,10 +65,14 @@
                                 </ul>
                                 <div class="menu-slider">
                                     <div class="menu-img">
-                                        <img src="./assets/img/Advertise/mega-menu-images1.png" alt="">
+                                        <a href="" class="menu-img-link">
+                                            <img src="./assets/img/Advertise/mega-menu-images1.png" alt="">
+                                        </a>
                                     </div>
                                     <div class="menu-img">
-                                        <img src="./assets/img/Advertise/mega-menu-images2.png" alt="">
+                                        <a href="" class="menu-img-link">
+                                            <img src="./assets/img/Advertise/mega-menu-images2.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -85,10 +90,72 @@
             </div>
         </div>
         <div id="slider">
+            <ul class="slide__category">
+                <li class="slide__category-item">
+                    <a href="" class="slide__category-link">
+                        <img src="./assets/img/category/header_category1_image.webp" alt="" class="slide__category-icon">
+                        COFFEE
+                    </a>
+                </li>
+                <li class="slide__category-item">
+                    <a href="" class="slide__category-link">
+                        <img src="./assets/img/category/header_category2_image.webp" alt="" class="slide__category-icon">
+                        NƯỚC ÉP
+                    </a>
+                </li>
+                <li class="slide__category-item">
+                    <a href="" class="slide__category-link">
+                        <img src="./assets/img/category/header_category3_image.jpg" alt="" class="slide__category-icon">
+                        CAKE
+                    </a>
+                </li>
+                <li class="slide__category-item">
+                    <a href="" class="slide__category-link">
+                        <img src="./assets/img/category/header_category4_image.jpg" alt="" class="slide__category-icon">
+                        COCKTAIL
+                    </a>
+                </li>
+                <li class="slide__category-item">
+                    <a href="" class="slide__category-link">
+                        <img src="./assets/img/category/header_category5_image.jpg" alt="" class="slide__category-icon">
+                        SỮA
+                    </a>
+                </li>
+                <li class="slide__category-item">
+                    <a href="" class="slide__category-link">
+                        <img src="./assets/img/category/header_category6_image.jpg" alt="" class="slide__category-icon">
+                        TRÀ
+                    </a>
+                </li>
+            </ul>
             <div class="slide-wrap">
-                <div class="slide"><img src="./assets/img/slider/slider_1.png"></div>
-                <div class="slide"><img src="./assets/img/slider/slider_2.png"></div>
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <div class="slide s1">
+                    <img src="./assets/img/slider/slider_1.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/slider/slider_2.png">
+                </div>
+                <div class="tran_slide">
+                    <label for="r1" class="tran_slide-item"></label>
+                    <label for="r2" class="tran_slide-item"></label>
+                </div>
+                <div class="slide_next left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slide_next right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
+            <!-- <div class="enjoyYourHoliday">
+                <div>
+                    <div>Enjoy <span>Your</span> Holiday</div>
+                </div>
+                <div>
+                    <div>With Our <span>Agency</span></div>
+                </div>
+            </div> -->
         </div>
         <div id="content">
             <div id="advertise">
@@ -197,69 +264,187 @@
                     </div>
                 </div>
             </div>
+
             <div id="section">
                 <h2 class="header-sections hover-header-black">Coffee là hương vị của bạn</h2>
                 <p class="sub-header sub-header-section3">Có gì bất ngờ tại đây</p>
-                <div class="smell-product">
-                    <div class="type-product">
-                        <div class="cost-type-product">59.000₫</div>
-                        <div class="img-type-product">
-                            <img src="./assets/img/product/product1.jpg" alt="">
-                            <div class="actions-product">
-                                <div class="act-product view-product">
-                                    <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
-                                </div>
-                                <div class="act-product cart-product">
-                                    <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                <!-- <div class="section_smell-product">
+                </div> -->
+                <div class="smell-product-container">
+
+                    <div class="smell-product">
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">59.000₫</div>
+                                <img src="./assets/img/product/product1.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="name-product">VIETNAMESE COFFEE</div>
                         </div>
-                        <div class="name-product">VIETNAMESE COFFEE</div>
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">80.000₫</div>
+                                <img src="./assets/img/product/product2.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">HAZELNUT ICE BLENDED</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">60.000₫</div>
+                                <img src="./assets/img/product/product3.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">AMERICANO</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">80.000₫</div>
+                                <img src="./assets/img/product/product4.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">CHAI LATTE</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="cost-type-product">80.000₫</div>
+                            <div class="img-type-product">
+                                <img src="./assets/img/product/product5.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">AMERICANO</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="cost-type-product">80.000₫</div>
+                            <div class="img-type-product">
+                                <img src="./assets/img/product/product5.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">AMERICANO</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">80.000₫</div>
+                                <img src="./assets/img/product/product2.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">HAZELNUT ICE BLENDED</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">59.000₫</div>
+                                <img src="./assets/img/product/product1.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">VIETNAMESE COFFEE</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">80.000₫</div>
+                                <img src="./assets/img/product/product2.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">HAZELNUT ICE BLENDED</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">60.000₫</div>
+                                <img src="./assets/img/product/product3.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">AMERICANO</div>
+                        </div>
+                        <div class="type-product">
+                            <div class="img-type-product">
+                                <div class="cost-type-product">80.000₫</div>
+                                <img src="./assets/img/product/product4.jpg" alt="">
+                                <div class="actions-product">
+                                    <div class="act-product view-product">
+                                        <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="act-product cart-product">
+                                        <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-product">CHAI LATTE</div>
+                        </div>
+
                     </div>
-                    <div class="type-product">
-                        <div class="cost-type-product">80.000₫</div>
-                        <div class="img-type-product">
-                            <img src="./assets/img/product/product2.jpg" alt="">
-                            <div class="actions-product">
-                                <div class="act-product view-product">
-                                    <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
-                                </div>
-                                <div class="act-product cart-product">
-                                    <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="name-product">HAZELNUT ICE BLENDED</div>
+                    <div class="product_next right">
+                        <i class="fas fa-chevron-right"></i>
                     </div>
-                    <div class="type-product">
-                        <div class="cost-type-product">60.000₫</div>
-                        <div class="img-type-product">
-                            <img src="./assets/img/product/product3.jpg" alt="">
-                            <div class="actions-product">
-                                <div class="act-product view-product">
-                                    <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
-                                </div>
-                                <div class="act-product cart-product">
-                                    <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="name-product">AMERICANO</div>
-                    </div>
-                    <div class="type-product">
-                        <div class="cost-type-product">80.000₫</div>
-                        <div class="img-type-product">
-                            <img src="./assets/img/product/product4.jpg" alt="">
-                            <div class="actions-product">
-                                <div class="act-product view-product">
-                                    <i class="icon-view-product fa fa-eye" aria-hidden="true"></i>
-                                </div>
-                                <div class="act-product cart-product">
-                                    <i class="icon-cart-product fa fa-cart-plus" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="name-product">CHAI LATTE</div>
+                    <div class="product_next left">
+                        <i class="fas fa-chevron-left"></i>
                     </div>
                 </div>
                 <div class="procedure">
@@ -273,7 +458,24 @@
                         <img src="./assets/img/Procedure/icon-cf-quy-trinh.png" alt="" class="icon-cf-quy-trinh">
                     </div>
                     <div class="content-procedure">
-                        <img src="./assets/img/Procedure/sec_quy_trinh_images1.png" alt="" class="img-procedure">
+                        <div class="content-procedure-container">
+                            <div class="content-procedure-container-img">
+                                <div class="content-procedure-item display">
+                                    <img src="./assets/img/Procedure/sec_quy_trinh_images1.png" alt="" class="img-procedure">
+                                </div>
+                                <div class="content-procedure-item">
+                                    <img src="./assets/img/Procedure/sec_quy_trinh_images2.png" alt="" class="img-procedure">
+                                </div>
+                                <div class="content-procedure-item">
+                                    <img src="./assets/img/Procedure/sec_quy_trinh_images3.png" alt="" class="img-procedure">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-procedure-tran_img">
+                            <span class="content-procedure-tran_img-item item1 item-long"></span>
+                            <span class="content-procedure-tran_img-item item2"></span>
+                            <span class="content-procedure-tran_img-item item3"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -333,14 +535,41 @@
                 <div id="section">
                     <h2 class="header-sections">Khách hàng nói gì</h2>
                     <p class="sub-header">1500+ Khách hàng hài lòng</p>
-                    <div class="content-feedback">
-                        <div class="img-feedback">
-                            <img src="./assets/img/feedback/avatar-testimonial2.jpg" alt="" >
+                    <div class="container__content-feedback">
+                        <div class="content-feedback">
+                            <div class="content-feedback-item">
+                                <div class="img-feedback">
+                                    <img src="./assets/img/feedback/avatar-testimonial1.webp" alt="" >
+                                </div>
+                                <h3 class="name-people-feedback">Ngô Thanh Vân</h3>
+                                <p class="comment-feedback">Cà phê đúng gu, thức uống ngon và khá đặc biệt hơn nữa dessert ở đây 
+                                    luôn là loại vừa ý với mình nhất. IziCoffee luôn làm cho mọi 
+                                    giác quan của mình kích thích tối đa.</p>
+                            </div>
+                            <div class="content-feedback-item">
+                                <div class="img-feedback">
+                                    <img src="./assets/img/feedback/avatar-testimonial2.jpg" alt="" >
+                                </div>
+                                <h3 class="name-people-feedback">Hà Duy Khương</h3>
+                                <p class="comment-feedback">Mình rất thích đưa khách hàng của mình đến đây bởi vì phong cách rất chuyên nghiệp. 
+                                    Hơn nữa thức uống ở đây rất ngon, có hương vị rất khác biệt
+                                    , các vị khách của mình vô cùng thích.</p>
+                            </div>
+                            <div class="content-feedback-item">
+                                <div class="img-feedback">
+                                    <img src="./assets/img/feedback/avatar-testimonial3.webp" alt="" >
+                                </div>
+                                <h3 class="name-people-feedback">Hà Minh Tuyết</h3>
+                                <p class="comment-feedback">Phong cách coffee tại IziCoffee vô cùng khác biệt nhưng lại hợp ý mình. 
+                                    Mình và các bạn của mình mỗi khi gặp mặt thì đều đến đây cả.
+                                    Mong IziCoffee luôn cho nhiều thức uống mới nhé.</p>
+                            </div>
                         </div>
-                        <h3 class="name-people-feedback">Hà Duy Khương</h3>
-                        <p class="comment-feedback">Mình rất thích đưa khách hàng của mình đến đây bởi vì phong cách rất chuyên nghiệp. 
-                            Hơn nữa thức uống ở đây rất ngon, có hương vị rất khác biệt
-                            , các vị khách của mình vô cùng thích.</p>
+                    </div>
+                    <div class="content-procedure-tran_img feedback">
+                        <span class="content-procedure-tran_img-item feedback_img-item feedback_item1 item-long"></span>
+                        <span class="content-procedure-tran_img-item feedback_img-item feedback_item2"></span>
+                        <span class="content-procedure-tran_img-item feedback_img-item feedback_item3"></span>
                     </div>
                 </div>
             </div>
@@ -435,6 +664,27 @@
             </div>
         </div>
     </div>
+    <!-- <div id="load-page" class="load-page">
+        <span class="loading-icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                    <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                </rect>
+                <rect x="8" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                    <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+                </rect>
+                <rect x="16" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                    <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+                </rect>
+            </svg>
+        </span>
+    </div> -->
     <div id="book-halu">
         <h3 class="booking">Đặt bàn</h3>
         <div class="calendar">
@@ -443,5 +693,6 @@
             </div>
         </div>
     </div>
+    <script src="./assets/js/javascript.js"></script>
 </body>
 </html>
