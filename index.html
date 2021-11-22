@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <div id="main">
@@ -184,7 +185,7 @@
                 </div>
             </div>
             <div id="section2">
-                <div id="section">
+                <div id="section" class="beverage-section">
                     <h2 class="header-sections">Khám phá menu</h2>
                     <p class="sub-header">Có gì đặc biệt ở đây</p>
                     <div class="content-sections">
@@ -438,8 +439,8 @@
                             </div>
                             <div class="name-product">CHAI LATTE</div>
                         </div>
-
                     </div>
+
                     <div class="product_next right">
                         <i class="fas fa-chevron-right"></i>
                     </div>
@@ -483,50 +484,58 @@
                 <div id="section">
                     <h2 class="header-sections hover-header-black">Tin tức</h2>
                     <p class="sub-header">Mỗi tuần là mỗi một câu chuyện ấm áp, mỗi tuần là một câu chuyện tình. Nào cùng thưởng thức cà phê và đọc nhé!</p>
-                    <div class="news-about-coffee">
-                        <div class="news-coffee">
-                            <div class="img-news-coffee">
-                                <img src="./assets/img/news/blog3.jpg" alt="" class="img-news">
+                    <div class="news-about-coffee-container">
+                        <div class="news-about-coffee">
+                            <div class="news-coffee">
+                                <div class="img-news-coffee">
+                                    <img src="./assets/img/news/blog3.jpg" alt="" class="img-news">
+                                </div>
+                                <div class="content-news">
+                                    <h3 class="header-news">CHẾ BIẾN CÀ PHÊ</h3>
+                                    <p class="quote-news">Cà phê sạch hiểu đơn giản là 100% 
+                                        cà phê, không pha trộn 
+                                        thêm bất cứ thứ gì khác. Vậy quy trình ...</p>
+                                    <div class="time-news">
+                                        <i class="icon-clock far fa-clock"></i>
+                                        04/04/2019
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-news">
-                                <h3 class="header-news">CHẾ BIẾN CÀ PHÊ</h3>
-                                <p class="quote-news">Cà phê sạch hiểu đơn giản là 100% 
-                                    cà phê, không pha trộn 
-                                    thêm bất cứ thứ gì khác. Vậy quy trình ...</p>
-                                <div class="time-news">
-                                    <i class="icon-clock far fa-clock"></i>
-                                    04/04/2019
+                            <div class="news-coffee">
+                                <div class="img-news-coffee">
+                                    <img src="./assets/img/news/blog2.jpg" alt="" class="img-news">
+                                </div>
+                                <div class="content-news">
+                                    <h3 class="header-news">TÌNH YÊU VÀ CÀ PHÊ</h3>
+                                    <p class="quote-news"> TÌNH YÊU VÀ CÀ PHÊ 
+                                        Yêu một người cũng giống yêu một hương vị cà phê. 
+                                        Có thể mất rất ít thời gi...</p>
+                                    <div class="time-news">
+                                        <i class="far fa-clock"></i>
+                                        04/04/2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-coffee">
+                                <div class="img-news-coffee">
+                                    <img src="./assets/img/news/blog1.jpg" alt="" class="img-news">
+                                </div>
+                                <div class="content-news">
+                                    <h3 class="header-news">LẮNG NGHE CÀ PHÊ KỂ CHUYỆN</h3>
+                                    <p class="quote-news">Cuộc đời cafe, cũng như cuộc đời của con người, 
+                                        cũng phải 9 tháng 10 ngày thai nghén mới được sinh ra.</p>
+                                    <div class="time-news">
+                                        <i class="far fa-clock"></i>
+                                        04/04/2019
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="news-coffee">
-                            <div class="img-news-coffee">
-                                <img src="./assets/img/news/blog2.jpg" alt="" class="img-news">
-                            </div>
-                            <div class="content-news">
-                                <h3 class="header-news">TÌNH YÊU VÀ CÀ PHÊ</h3>
-                                <p class="quote-news"> TÌNH YÊU VÀ CÀ PHÊ 
-                                    Yêu một người cũng giống yêu một hương vị cà phê. 
-                                    Có thể mất rất ít thời gi...</p>
-                                <div class="time-news">
-                                    <i class="far fa-clock"></i>
-                                    04/04/2019
-                                </div>
-                            </div>
+                        <div class="news_next right">
+                            <i class="fas fa-chevron-right"></i>
                         </div>
-                        <div class="news-coffee">
-                            <div class="img-news-coffee">
-                                <img src="./assets/img/news/blog1.jpg" alt="" class="img-news">
-                            </div>
-                            <div class="content-news">
-                                <h3 class="header-news">LẮNG NGHE CÀ PHÊ KỂ CHUYỆN</h3>
-                                <p class="quote-news">Cuộc đời cafe, cũng như cuộc đời của con người, 
-                                    cũng phải 9 tháng 10 ngày thai nghén mới được sinh ra.</p>
-                                <div class="time-news">
-                                    <i class="far fa-clock"></i>
-                                    04/04/2019
-                                </div>
-                            </div>
+                        <div class="news_next left">
+                            <i class="fas fa-chevron-left"></i>
                         </div>
                     </div>
                 </div>
@@ -692,6 +701,10 @@
                 <i class="icon-calendar fas fa-calendar-alt    "></i>
             </div>
         </div>
+    </div>
+    <div id="top-page">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        TOP
     </div>
     <script src="./assets/js/javascript.js"></script>
 </body>

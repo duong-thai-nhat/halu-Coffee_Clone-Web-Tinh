@@ -1,7 +1,11 @@
 /* Tablet, Mobile */
-@media (max-width: 1123px){
-    #main #header{
-        height: 78px !important;
+@media (max-width: 1024px){
+    #section{
+        width: 720px;
+    }
+
+    #header{
+        height: 88px;
     }
 
     #header-container{
@@ -16,56 +20,65 @@
         flex: 1; */
     }
 
-    #header-container #nav{
-        display: none;
+    #header-container #nav.box-left{
         position: absolute;
-        background-color: #fff;
-        color: #000;
-        transition: all 1s;
-    }
-    
-    #header-container #nav.active{
-        display: block;
+        opacity: 0;
         top: 100%;
         left: 30px;
         right: 30px;
+        background-color: #fff;
+        color: #000;
+        overflow: hidden;
+        transition: all 1s;
+        display: none;
+    }
+    
+    #header-container #nav.box-left.active{
+        opacity: 1;
+        display: block;
     }
 
     #header-container #nav li{
         display: block;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
+        padding-left: 0;
+        padding-right: 0;
     }
-
+    
     #header-container #nav li a{
         color: #000;
+        display: block;
+        border-bottom: 1px dashed #cdcdcd;
+        padding: 0 10px;
     }
 
     #nav .subnav{
         display: block;
         position: unset;
         box-shadow: unset;
-        padding: 0 8px;
+        padding: 0;
     }
 
     #nav .category > li{
         width: unset;
         float: unset;
     }
-
-    #nav .category > li > a{
+    
+    #header-container #nav .category > li > a{
         font-weight: unset;
         text-transform: unset;
-        font-size: 16px;
+        font-size: 14px;
         display: block;
-        padding: 7px 0;
+        padding: 6px 20px;
+        color: #555555;
     }
 
     #nav .sub-category li{
-        padding: 7px 0;
+        padding: 0;
     }
 
-    #nav .sub-category li a{
-        padding: 0 0 0 10px;
+    #header-container #nav .sub-category li a{
+        display: block;
+        padding: 7px 30px;
     }
 
     #nav .subnav .menu-slider{
@@ -79,7 +92,7 @@
 
     #box-left-header img{
         width: 56px;
-        margin-left: 140px;
+        margin-left: 100px;
         margin-right: 0;
     }
 
@@ -87,12 +100,174 @@
         display: none;
     }
 
-    #advertise{
-        width: 750px;
-        display: none;
-    }
-
     #slider{
         /* display: none; */
     }
+
+    #advertise{
+        width: 750px;
+    }
+
+    .content-sections{
+        flex-direction: column;
+    }
+
+    #section .beverage-col{
+        width: 100%;
+    }
+
+    #section .beverage .beverage-img{
+        flex: 0.8;
+    }
+
+    #section .beverage .beverage-img img{
+        padding: 0 10px;
+    }
+
+    #section .beverage{
+        
+    }
+
+    #section .smell-product .type-product{
+        min-width: 33.33%
+    }
+
+    #section .content-procedure:nth-child(1){
+        min-height: unset;
+        padding-bottom: 30px;
+    }
+
+    #section .procedure .write-content-proceduct{
+        width: unset;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+
+    #section .procedure .header-procedure{
+        max-width: unset;
+        font-size: 32px;
+        padding-right: 10%;
+    }
+
+    #section .procedure .sub-header-procedure{
+        font-size: 15px;
+        line-height: unset;
+    }
+
+    #section .procedure .icon-cf-quy-trinh{
+        width: 140px;
+    }
+
+    #section .content-feedback-item .comment-feedback{
+        max-width: 65%;
+    }
+
+    #footer .content-footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 20px;
+    }
+
+    #footer .substance:not(:nth-child(1)){
+        padding-left: 0;
+    }
+
+    #footer .substance{
+        
+    }
+
+    #book-halu{
+        width: 50px;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+    #book-halu .booking{
+        display: none;
+    }
+
+    #book-halu:hover{
+        width: 80px;
+        border-radius: 30px;
+    }
+    
+    #book-halu:hover .calendar{
+        cursor: pointer;
+    }
+
+    .news-about-coffee-container{
+        position: relative;
+        overflow: hidden;
+    }
+
+    #section .news-coffee{
+        min-width: 48%;
+        margin: 0 1%;
+
+    }
+
+    .news_next{
+        display: block;
+    }
+    
+    .news_next.right{
+        right: 1%;
+    }
+
+    .news_next.left{
+        left: 1%;
+    }
+
 }
+
+@media (max-width: 740px){
+    #section{
+        width: 100%;
+    }
+
+    #main #header{
+        background-color: #422b1d;
+    }
+
+    #slider{
+        padding-top: 78px;
+    }
+
+    #header-container{
+        padding: 0;
+    }
+
+    #box-left-header{
+        display: none;
+    }
+
+    /* advertise */
+    #advertise{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #advertise .adver-level-one{
+        flex-direction: row;
+    }
+
+    #footer .content-footer{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 600px){
+    /* advertise */
+    #advertise{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #advertise .adver-level-one{
+        flex-direction: column;
+    }
+}
+

@@ -2,18 +2,66 @@ window.onscroll = function() {scrollFunction()};
 
 var header = document.getElementById("header");
 
+let pageTop = document.querySelector('#top-page');
+
+// Click button pageTop
+pageTop.onclick = function(){
+  document.documentElement.scrollTop = 0;
+}
+
 // loadpage();
 
 function scrollFunction() {
+  
+  // Top page
+  
+  (function handleScrollTop(){
+    if(document.body.scroll < 200 || document.documentElement.scrollTop < 200){
+      pageTop.style.opacity = 0;
+    }
+    else{
+      pageTop.style.opacity = 1;
+    }
+  })()
+
+  // Scroll header
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    header.style.height = "92px";
-    header.style.backgroundColor = "rgba(29,19,19,0.9)";
+    if(window.innerWidth > 1023){
+      header.style.height = "92px";
+    }
+      header.style.backgroundColor = "rgba(29,19,19,0.9)";
   }
   else {
+    if(window.innerWidth <= 1023){
+      header.style.height = "78px";
+      if(window.innerWidth<=739){
+        header.style.backgroundColor = "#422b1d";
+      }else{
+        header.style.backgroundColor = "transparent";
+      }
+    }else{
+      header.style.height = "88px";
+      header.style.backgroundColor = "transparent";
+    }
+  }
+}
+
+// Jquery Change Color and height when the Screen's size change
+$(window).resize(function() {
+  if($(window).width()<=1023){
+    if($(window).width()<=739){
+      header.style.backgroundColor = "#422b1d";
+    }
+    else{
+      header.style.backgroundColor = "transparent";
+    }
+    header.style.height = "78px";
+  }
+  else{
     header.style.height = "88px";
     header.style.backgroundColor = "transparent";
   }
-}
+});
 
 //*** slide_next
 var slideS1 = document.querySelector(".slide.s1");
@@ -177,6 +225,67 @@ var Nav = document.querySelector('#nav');
 btnOpenNav.onclick = function(){
   Nav.classList.toggle('active');
 }
+
+// News
+var news = document.querySelector('.news-coffee');
+var newss = document.querySelectorAll('.news-coffee');
+
+var containerNews = document.querySelector('.news-about-coffee');
+
+document.querySelector('.news_next.right').onclick = function(){
+
+  if(containerNews.offsetLeft < - news.offsetWidth * (newss.length - 3)){
+    containerNews.style.marginLeft = 0;
+  }
+  else{
+    if(containerNews.style.marginLeft === ''){
+      containerNews.style.marginLeft = 0;
+    }
+    containerNews.style.marginLeft = 
+    (- parseInt(containerNews.style.marginLeft.replace(/[^0-9]/g , '')) 
+    -  (news.offsetWidth * 1.04 /* (Đoạn margin giữa các phần tử)*/)) + 'px';
+  }
+}
+
+document.querySelector('.news_next.left').onclick = function(){
+  if(containerNews.offsetLeft > - news.offsetWidth){
+    containerNews.style.marginLeft = - news.offsetWidth * (newss.length - 2) + 'px';
+  }
+  else{
+    
+    containerNews.style.marginLeft = 
+    (- parseInt(containerNews.style.marginLeft.replace(/[^0-9]/g , '')) 
+    + news.offsetWidth * 1.04 /* (Đoạn margin giữa các phần tử)*/) + 'px';
+  }
+}
+
+var app = (function(){
+  const cars = [];
+  return {
+    add(car){
+      cars.push(car);
+    },
+
+    delete(index){
+      cars.splice(index,1);
+    },
+
+    edit(index, car){
+      cars[index] = car;
+    },
+
+    showCars(){
+      console.log(cars);
+    }
+  }
+})()
+
+
+
+
+
+
+
 
 
 

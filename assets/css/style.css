@@ -16,6 +16,7 @@ a{
 html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 #main{
@@ -391,6 +392,7 @@ input[name="r"]{
     background-color: #fff;
 }
 
+.news_next,
 .product_next,
 .slide_next{
     position: absolute;
@@ -412,6 +414,7 @@ input[name="r"]{
     right: 0;
 }
 
+.news_next i,
 .product_next i,
 .slide_next i{
     display: block;
@@ -565,7 +568,7 @@ input[name="r"]{
     margin-right: auto;
     margin-left: auto;
     max-width: 1200px;
-    padding: calc(50px - 15px) 0;
+    padding: calc(50px - 15px) 20px;
     display: flex;
 }
 
@@ -674,8 +677,7 @@ input[name="r"]{
     align-items: center;
 }
 
-#section .beverage-left,
-#section .beverage-right{
+#section .beverage-col{
     width: 47%;
 }
 
@@ -695,16 +697,30 @@ input[name="r"]{
 }
 
 #section .beverage .content-beverage{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex: 4;
+    margin-right: 20px;
+}
+
+/* #section .beverage .content-beverage::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border-bottom: 2px dashed #fff;
+} */
+
+#section .beverage .detail-beverage{
+    padding-top: 12px;
+    border-top: 2px dashed #fff;
 }
 
 #section .content-beverage .name-cost{
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px dashed;
     padding: 12px 0;
 }
 
@@ -949,8 +965,10 @@ input[name="r"]{
 
 #section .news-about-coffee{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
+    transition: all 0.25s ease;
 }
 
 #section .news-coffee{
@@ -992,7 +1010,7 @@ input[name="r"]{
 }
 
 #section .content-news .quote-news{
-    padding-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 20px;
     max-height: 40px;
@@ -1018,6 +1036,11 @@ input[name="r"]{
     border-radius: 5px;
 }
 
+.news_next{
+    display: none;
+}
+
+/* Feedback */
 #section5-feedback{
     background: url(../img/feedback/bg-section-danhgia.jpg) top center / cover no-repeat;
     background-attachment: fixed;
@@ -1039,7 +1062,7 @@ input[name="r"]{
 }
 
 #section .content-feedback-item{
-    margin: 0 auto;
+    margin: 0 auto 30px;
     text-align: center;
     width: 100%;
 }
@@ -1079,7 +1102,7 @@ input[name="r"]{
 .content-procedure-tran_img.feedback{
     display: flex;
     position: absolute;
-    bottom: -30px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     width: 70px;
@@ -1206,7 +1229,7 @@ input[name="r"]{
     justify-content: flex-end;
     border-radius: 20px;
     box-shadow: 0px 1px 5px 3px #f3f3f3;
-    width: 11%;
+    width: 150px;
     height: 46px;
 }
 
@@ -1253,6 +1276,28 @@ input[name="r"]{
     top: 50%;
     right: 50%;
     transform: translateY(-50%) translateX(50%);
+}
+
+#top-page{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #212121;
+    text-align: center;
+    color: #a7a7a7;
+    line-height: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+#top-page i{
+    font-size: 12px;
+    font-weight: 900;
 }
 
 .load-page{
